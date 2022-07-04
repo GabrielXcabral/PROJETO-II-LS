@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+
+/* Flex styles -------------------------------------------------*/
+header {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 700px) {
+ .leading {
+    display: flex;
+    align-items: center;
+  }
+}
+
+
+/* Grid styles -------------------------------------------------*/
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 40px;
+}
+
+#tt{
+  display: grid;
+  /*grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));*/
+  grid-gap: 20px;
+  margin-left: 15px;
+  margin-bottom: 15px
+
+}
+
+
+/* Generic styles ----------------------------------------------*/
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+header {
+  padding: 10px;
+  font-size: 2em;
+  color: white;
+  background-color: #333;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 20px;
+}
+
+.leading {
+  height: 550px;
+  margin-bottom: 30px;
+  padding: 30px;
+  color: white;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://www.wheninmanila.com/wp-content/uploads/2021/01/shonen-jump-anime-manga.jpeg') center #333 no-repeat;
+  background-size: cover;
+  color: white;
+  text-shadow: 0px 0px 5px #000;
+}
+
+.leading-bigtext {
+  font-family: 'Otomanopee One', sans-serif;
+  color: rgb(252, 255, 78);
+  margin-right: 60px;
+  font-weight: bold;
+  font-size: 20vw;
+}
+
+@media (min-width: 700px) {
+  .leading-bigtext {
+    font-family: 'Otomanopee One', sans-serif;
+    font-size: 100px;
+  }
+}
+
+.leading-text {
+  font-family: 'Otomanopee One', sans-serif;
+  max-width: 900px;
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
+main{
+  background-color: #333;
+  padding-bottom: 10px;
+}
+
+#cards {
+  max-width: 960px;
+  margin: 0 auto 30px;
+}
+
+article {
+  position: relative;
+}
+
+/*.article-img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.article-title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+}*/
+
+.third {
+  border-color: #e9ff25;
+  color: rgb(192, 37, 37);
+  box-shadow: 0 0 40px 40px #e9ff25 inset, 0 0 0 0 #2c2c2c;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+.third:hover {
+  box-shadow: 0 0 10px 0 #e9ff25 inset, 0 0 10px 4px  #2c2c2c;
+}
+
+#btn {
+    box-sizing: border-box;
+     -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border: 2px solid #2c2c2c;
+    border-radius: 0.6em;
+    color: #2c2c2c;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 0.5em 0.5em;
+    /*text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; */
+}
+
+/*Estelas*/
+/*.avaliacao{
+  display: flex;
+ }
+.star-icon{
+  list-style-type: none;
+  border: 1px solid #fff;
+  cursor: pointer;
+  color: #ffe500;
+  font-size: 40px;/* alterar o tamanho das estrelas */
+/*}
+.star-icon::before{
+  content: "\2605";
+}
+.star-icon.ativo ~ .star-icon::before{
+  content: "\2606";
+}
+.avaliacao:hover .star-icon::before{
+  content: "\2605";
+}
+.star-icon:hover ~ .star-icon::before{
+  content: "\2606";
+}*/
